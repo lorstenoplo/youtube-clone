@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { Header } from "../components";
+import { Header, Sidebar, Trending } from "../components";
 
 export default function Home() {
   return (
-    <div className="bg-[#181920] h-screen">
+    <div className="bg-[#181920] min-h-screen flex">
       <Head>
         <title>Youtube</title>
         <link
@@ -13,7 +13,11 @@ export default function Home() {
         />
       </Head>
 
-      <Header />
+      <Sidebar />
+      <div className="flex-1">
+        <Header />
+        <Trending />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  PlusCircleOutline,
+  AdjustmentsOutline,
+  BellOutline,
+} from "@graywolfai/react-heroicons";
 
 export const Header: React.FC = () => {
   return (
@@ -21,34 +26,14 @@ export const Header: React.FC = () => {
       </div>
 
       <div className="flex items-center space-x-6">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-          />
-        </svg>
+        <PlusCircleOutline className="h-6 w-6 text-white" />
+
+        <AdjustmentsOutline className="h-6 w-6 text-white" />
+        <div className="relative">
+          <div className="absolute h-2.5 w-2.5 bg-red-400 top-0 right-0 rounded-full" />
+          <BellOutline className="h-6 w-6 text-white" />
+        </div>
+
         <img
           src="https://thumbs.dreamstime.com/b/cartoon-laughing-funny-zombie-face-vector-monster-square-avatar-101864273.jpg"
           alt="avatar"
