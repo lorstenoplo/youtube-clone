@@ -10,3 +10,28 @@
 .search_bar::placeholder {
   text-align: center;
 }
+
+/*customise scrollbar*/
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #181920;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(82, 81, 81, 0.5);
+  border-radius: 10px;
+  height: 10px;
+  background-clip: padding-box;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(82, 81, 81, 0.4);
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background-color: rgba(82, 81, 81, 0.3);
+}

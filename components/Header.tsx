@@ -8,7 +8,7 @@ import {
 export const Header: React.FC = () => {
   return (
     <div
-      className="px-4 py-6 bg-[#181920] flex justify-between border-gray-800"
+      className="px-4 py-6 bg-[#181920] flex justify-between border-gray-800 sticky top-0 z-50"
       style={{ borderBottomWidth: 1 }}
     >
       <img
