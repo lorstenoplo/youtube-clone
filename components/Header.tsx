@@ -3,7 +3,9 @@ import {
   PlusCircleOutline,
   AdjustmentsOutline,
   BellOutline,
+  MicrophoneOutline,
 } from "@graywolfai/react-heroicons";
+import Link from "next/link";
 
 export const Header: React.FC = () => {
   return (
@@ -11,13 +13,18 @@ export const Header: React.FC = () => {
       className="px-4 py-6 bg-[#181920] flex justify-between border-gray-800 sticky top-0 z-50"
       style={{ borderBottomWidth: 1 }}
     >
-      <img
-        src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png"
-        alt="logo"
-        className="h-8 object-contain"
-      />
+      <Link href={"/"}>
+        <a>
+          <img
+            src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png"
+            alt="logo"
+            className="h-8 object-contain"
+          />
+        </a>
+      </Link>
 
-      <div className="flex flex-1 px-6">
+      <div className="flex flex-1 px-6 items-center">
+        <MicrophoneOutline className={"h-5 w-5 text-gray-400 cursor-pointer"} />
         <input
           type="text"
           placeholder="Type to search"
