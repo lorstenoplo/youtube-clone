@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const VideoTile: React.FC = () => {
   return (
-    <Link href={"/watch/[videoId]"} as={"/watch/123"}>
+    <Link href={"/watch/[videoId]"} as={`/watch/12okwds0`}>
       <a>
         <div>
           <div className="relative">
